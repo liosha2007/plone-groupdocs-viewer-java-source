@@ -1,0 +1,41 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"  
+    i18n_domain="groupdocs.viewer_java">
+
+  <!-- Ensure Plone's portlets ZCML has already been processed;
+       without this, we may get a permission lookup error -->
+  <include package="plone.app.portlets" />
+
+	<!-- -*- extra stuff goes here -*- -->
+    
+ <five:registerPackage package="." />
+    
+    <genericsetup:registerProfile
+       name="default"
+       title="Static text portlet"
+       directory="profiles/default"
+       description="A simple portlet that displays static HTML"
+       provides="Products.GenericSetup.interfaces.EXTENSION"
+       />
+       
+     <permission
+       id="groupdocs.viewer_java.portlets.AddStaticPortlet"
+       title="groupdocs.viewer_java.portlets: Add GrouDocs Viewer_java portlet"
+       />
+ 
+     <!-- Register the portlet -->
+     <plone:portlet
+         name="groupdocs.viewer_java.Gdviewer_java"
+         interface=".gdviewer_java.IGDViewer_javaPortlet"
+         assignment=".gdviewer_java.Assignment"
+         view_permission="zope2.View"
+         edit_permission="plone.app.portlets.ManagePortlets"
+         renderer=".gdviewer_java.Renderer"
+         addview=".gdviewer_java.AddForm"
+         editview=".gdviewer_java.EditForm"
+         />
+
+</configure>
