@@ -15,9 +15,9 @@
   <!-- Register the installation GenericSetup extension profile -->
   <genericsetup:registerProfile
       name="default"
-      title="GroupDocs Viewer_java"
+      title="GroupDocs Viewer  for Java"
       directory="profiles/default"
-      description="GroupDocs Viewer_java for Plone CMS"
+      description="GroupDocs Viewer for Java plugin for Plone CMS"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   

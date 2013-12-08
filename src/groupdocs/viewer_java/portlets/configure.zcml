@@ -23,7 +23,7 @@
        
      <permission
        id="groupdocs.viewer_java.portlets.AddStaticPortlet"
-       title="groupdocs.viewer_java.portlets: Add GrouDocs Viewer_java portlet"
+       title="groupdocs.viewer_java.portlets: Add GrouDocs Viewer for Java portlet"
        />
  
      <!-- Register the portlet -->
