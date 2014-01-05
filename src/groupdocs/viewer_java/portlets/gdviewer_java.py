@@ -158,10 +158,10 @@ class Renderer(base.Renderer):
                        '</script>\r\n' \
                        '<script type="text/javascript" src="{url}/assets/js/installableViewer.min.js"></script>\r\n' \
                        '<script type="text/javascript">\r\n' \
-                       '    $.fn.groupdocsViewer.prototype.applicationPath = "{url}/";\r\n' \
+                       '    $.ui.groupdocsViewer.prototype.applicationPath = "{url}/";\r\n' \
                        '</script>\r\n' \
                        '<script type="text/javascript">\r\n' \
-                       '    $.fn.groupdocsViewer.prototype.useHttpHandlers = {use_http_handlers};\r\n' \
+                       '    $.ui.groupdocsViewer.prototype.useHttpHandlers = {use_http_handlers};\r\n' \
                        '</script>\r\n' \
                        '<script type="text/javascript" src="{url}/assets/js/GroupdocsViewer.all.min.js"></script>\r\n' \
                        '<link rel="stylesheet" type="text/css" href="{url}/assets/css/bootstrap.css">\r\n' \
